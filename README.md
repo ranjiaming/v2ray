@@ -285,3 +285,8 @@ chmod +x install.sh
 
 <p><img src="https://affpass.com/ga?ga=v2ray&amp;dt=github.wiki.1&amp;dr=&amp;ul=zh-CN&amp;sd=24-bit&amp;sr=&amp;vp=&amp;z=0&amp;dl=/github/1" alt="" /></p>
 </div>
+
+注意几点：
+1.若caddy起不来，则有可能是一下原因：
+ 1.1 新服务器申请证书需要输入邮箱，建议单独执行 systemctl status caddy 查看执行路径，然后复制执行，输入邮箱。
+ 1.2 上一步完成后还是无法申请证书，建议查看防火墙80和443端口是否开放。
