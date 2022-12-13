@@ -1,22 +1,16 @@
 # 注意：
 ```text
-1.安装脚本：
-bash <(curl -s -L https://git.io/v2ray.sh)    最新脚本
-bash <(curl -s -L https://git.io/v2ray.sh) online old    老版本（在新版本无法使用时使用此版本)
-
-2.端口开放
+1.端口开放
   firewall-cmd --zone=public --add-port=80/tcp --permanent
   firewall-cmd --zone=public --add-port=443/tcp --permanent
   firewall-cmd --zone=public --add-port=461/tcp --permanent
   firewall-cmd --zone=public --add-port=8080/tcp --permanent
-  
   firewall-cmd --reload
-  
   //查看开启是否成功
   firewall-cmd --list-ports
-  
-3.端口开启后重启caddy
-  systemctl restart caddy
+1.安装脚本：
+bash <(curl -s -L https://git.io/v2ray.sh)    最新脚本
+bash <(curl -s -L https://git.io/v2ray.sh) online old    老版本（在新版本无法使用时使用此版本)
 ```
 <div class="post-content">
 <p>支持 V2Ray 绝大多数传输协议，WebSocket + TLS，HTTP/2，Shadowsocks，动态端口，集成 BBR 和锐速优化等。</p>
